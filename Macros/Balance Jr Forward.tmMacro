@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>action</key>
+				<string>findNext</string>
+				<key>findInProjectIgnoreCase</key>
+				<true/>
+				<key>findInProjectRegularExpression</key>
+				<false/>
+				<key>findString</key>
+				<string>(?xm)
+&lt;(\w+)[^&gt;]*&gt;(?&gt;[^&lt;]*?&lt;/\1&gt;)                    # HTML Tags Balanced
+|(?&lt;=[^/]&gt;)[^&gt;&lt;]*(?=&lt;/)                        # HTML &gt;Contents&lt;/
+|(?&lt;=&lt;!--\s).*?(?=\s--&gt;)                       # HTML Comments
+|\b[\w-]+\b(?=\s*=)                            # HTML Attribute name
+|\s\b[\w-]+\b=\"[^\"]*\"                       # HTML Attribute name value pair
+|(?&lt;=\")[^\"\n&lt;&gt;]*(?=\")                       # HTML Compatible String Double
+|&lt;[^&gt;\n]*/?&gt;                                   # HTML Tags
+
+|&lt;%.*?%&gt;                                       # Embedded Source
+|(?&lt;=&lt;%[-@#=]\s).*?(?=\s-?%&gt;)                  # The contents of various other forms of Embedded Source
+|(?&lt;=&lt;%\s).*?(?=\s-?%&gt;)                        # The contents of Embedded Source
+
+|(?&lt;=/\*).*?(?=\*/)                            # /* Contents of Comment Blocks */
+|/\*.*?\*/                                     # /* Comment Blocks */
+
+|(?&lt;=\')[^\'\n]*?(?=\')                         # 'String Single'
+|(?&lt;=\")[^\"\n]*(?=\")                         # String Double
+|(?&lt;=\[)[^\[\]\n]*?(?=\])                       # [Square Brackets]
+|(?&lt;=\{)[^\{\}\n]*?(?=\})                       # {Curly Brackets}
+
+|\#[0-9a-fA-F]{3,6}                            # Hex Colors
+|(?&lt;![\d])-?\d+(?:\.\d+)?(?!=\d)               # Number 123 123.123 -123
+|[@$!]\w+\b                                    # @variables $variables !etc
+
+|(?&lt;=[\(,:])[^\(\),\n]*(?=[\),;])              # Comma Delimitated
+# Thomas Aylott &lt;oblivious@subtleGradient.com&gt; #
+# Balance Jr. Regular Expression version 2.8   #</string>
+				<key>ignoreCase</key>
+				<true/>
+				<key>regularExpression</key>
+				<true/>
+				<key>replaceAllScope</key>
+				<string>selection</string>
+				<key>replaceString</key>
+				<string>subtleGradient</string>
+				<key>wrapAround</key>
+				<true/>
+			</dict>
+			<key>command</key>
+			<string>findWithOptions:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Balance Jr Forward</string>
+	<key>scopeType</key>
+	<string>local</string>
+	<key>useGlobalClipboard</key>
+	<true/>
+	<key>uuid</key>
+	<string>33E4BFCF-83DF-4029-9A8C-8F00B9DD2241</string>
+</dict>
+</plist>
