@@ -7,8 +7,8 @@ Balance Jr
 
 Select the most obvious thing. Try it.
 
-* Balance Jr Back — **HOME**
-* Balance Jr Forward — **END**
+* Balance Jr Back &mdash; **HOME**
+* Balance Jr Forward &mdash; **END**
 
 Select Folding Group
 --------------------
@@ -17,7 +17,7 @@ Select Folding Group
 Select the current folding group. Undoable.  
 &#x2318;Z moves your cursor back to its previous location.
 
-* Select Folding Group — **&#x2303;F1**
+* Select Folding Group &mdash; **&#x2303;F1**
 
 Select Balanced Tags
 --------------------
@@ -26,5 +26,5 @@ Select Balanced Tags
 Select the current HTML / XML tag or its contents.  
 Repeatable. Keep running the command to select the next parent tag.
 
-* Select Balanced (HT|X)ML Tags — **&#x2318;&#x21E7;B**
-* Select Content of Balanced (HT|X)ML Tags — **&#x2318;&#x2325;&#x21E7;B**
+* Select Balanced (HT|X)ML Tags &mdash; **&#x21E7;&#x2318;B**
+* Select Content of Balanced (HT|X)ML Tags &mdash; **&#x2325;&#x21E7;&#x2318;B**
