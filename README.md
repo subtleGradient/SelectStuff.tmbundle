@@ -28,3 +28,7 @@ Repeatable. Keep running the command to select the next parent tag.
 
 * Select Balanced (HT|X)ML Tags &mdash; **&#x21E7;&#x2318;B**
 * Select Content of Balanced (HT|X)ML Tags &mdash; **&#x2325;&#x21E7;&#x2318;B**
+
+To make this work you'll have to install **HTML::Parser** for Perl. Run this from the terminal:
+
+	sudo -H cpan -i HTML::Parser
