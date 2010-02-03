@@ -1,3 +1,13 @@
+**How to install from GitHub**
+
+1. Click the "Download Source" button.
+2. Unzip the download
+3. Rename the folder to SelectStuff.tmbundle
+4. Double-click
+5. TextMate handles the rest!
+
+---
+
 Select Stuff
 ============
 
